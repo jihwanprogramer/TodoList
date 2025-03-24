@@ -10,18 +10,22 @@ import java.util.Date;
 @Getter
 @AllArgsConstructor
 public class TodoResponseDto {
+    private Long id;
     private String todo;
     private String name;
     private Date uploadDate;
-    private Long id;
+    private Date editDate;
 
-    public TodoResponseDto(Todo todo){
-        this.todo =todo.getTodo();
+    public TodoResponseDto(Todo todo) {
+        this.id = todo.getId();
+        this.todo = todo.getTodo();
         this.name = todo.getName();
         this.uploadDate = todo.getUploadDate();
-        this.id=todo.getId();
+        this.editDate = todo.getEditDate();
     }
 }
+
+
 
 
 
