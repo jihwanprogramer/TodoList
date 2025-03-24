@@ -2,6 +2,7 @@ package org.example.todo.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+
 import java.util.Date;
 
 @Getter
@@ -14,7 +15,7 @@ public class Todo {
     private Date uploadDate;
     private Date editDate;
 
-    public Todo(String todo,String name,String password,Date uploadDate,Date editDate){
+    public Todo(String todo, String name, String password, Date uploadDate, Date editDate) {
         this.todo = todo;
         this.name = name;
         this.password = password;
@@ -22,7 +23,7 @@ public class Todo {
         this.editDate = editDate;
     }
 
-    public Todo(Long id,String todo,String name,Date uploadDate,Date editDate){
+    public Todo(Long id, String todo, String name, Date uploadDate, Date editDate) {
         this.id = id;
         this.todo = todo;
         this.name = name;
