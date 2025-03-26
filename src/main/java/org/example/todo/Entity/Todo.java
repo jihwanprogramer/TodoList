@@ -59,5 +59,5 @@ public class Todo {
         this.password = password;
         this.uploadDate = uploadDate;
         this.editDate = editDate;
-    }g
+    }
 }
