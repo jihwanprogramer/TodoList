@@ -1,0 +1,144 @@
+[33mcommit 602d7db128d07a5f0bdd6ed1c394494731a142e8[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Tue Mar 25 18:41:17 2025 +0900
+
+    modified: TodoServiceImpl.java 수정시 패스워드 기능 추가 및 주석 추가
+
+[33mcommit abf8e48ec310ac8e45870fb77cbd00c663a0a684[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Tue Mar 25 18:41:11 2025 +0900
+
+    modified: TodoService.java 주석 추가
+
+[33mcommit 6981dfc0857ad7fb81f7c3db920599061100c8d9[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Tue Mar 25 18:41:04 2025 +0900
+
+    modified: TodoRepositoryImpl.java 주석 추가
+
+[33mcommit 698f7ae331745e2b78273f4adc38e8091e4f37e4[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Tue Mar 25 18:40:58 2025 +0900
+
+    modified: TodoRepository.java 주석 추가 및 수정시 패스워드 확인 기능 코드 추가
+
+[33mcommit edb67e9a7899e3a35da48ed6b68678db9a497611[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Tue Mar 25 18:40:52 2025 +0900
+
+    modified: TodoResponseDto.java 주석 추가 및 코드 정리
+
+[33mcommit 16799d8f6d13e520ec2aed4e12052701e5561a43[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Tue Mar 25 18:40:44 2025 +0900
+
+    modified: TodoController.java 주석 추가 및 수정시 패스워드 입력 기능 추가
+
+[33mcommit f7b391c332a9ad42c501744dbedc1c0b7c3d7bc8[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Tue Mar 25 18:40:36 2025 +0900
+
+    modified: TodoRequestDto.java 주석 추가 및 코드 정리
+
+[33mcommit 5127bf42b58b7608f974c730b9246a69e0fdbe7f[m
+Merge: 113135d b1c2357
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:59:39 2025 +0900
+
+    Merge commit 'b1c2357'
+
+[33mcommit b1c23576c2aa80e0d6a54f36ba55de57052b1e45[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:46:01 2025 +0900
+
+    feat: TodoServiceImpl 구현 추가
+    TodoService 인터페이스를 구현하는 TodoServiceImpl 클래스를 추가하였습니다.
+    - Todo 저장, 조회, 조건 검색 및 업데이트 기능을 포함.
+
+[33mcommit 8b18ccd59de934b10f4f14df7f1353b11b4828c6[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:45:49 2025 +0900
+
+    feat: TodoService 인터페이스 추가
+    Todo 관련 비즈니스 로직을 정의하는 TodoService 인터페이스를 추가하였습니다.
+
+[33mcommit 6b3c4a48cbec19bf72df92b9e2dd31f5c0c0f87e[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:45:38 2025 +0900
+
+    feat: TodoRepositoryImpl 구현 추가
+    TodoRepository 인터페이스를 구현하는 TodoRepositoryImpl 클래스를 추가하였습니다.
+    - Todo 저장, 조회, 조건 검색 및 업데이트 기능을 포함.
+
+[33mcommit cfa6e406140e6be4291002412b5ce9237b76c678[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:45:27 2025 +0900
+
+    feat: TodoRepository 인터페이스 추가
+    TodoRequestDto와 TodoResponseDto를 제어하는 메서드를 정의하는 TodoRepository 인터페이스를 추가하였습니다.
+
+[33mcommit bada63f88a8fb7ce39791b1b4587bf235f734a22[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:08:31 2025 +0900
+
+    feat: TodoResponseDto.java에 응답 데이터 모델 추가
+    
+    TodoResponseDto.java에 요구받는 데이터들을 포함하는 응답 DTO를 구현하였습니다.
+    - id, todo, name, uploadDate, editDate 필드를 포함하며,
+    - Todo 엔티티를 기반으로 생성할 수 있는 생성자를 추가하였습니다.
+
+[33mcommit be4076acd8934214203211f5a0ca93a75b1cf3e3[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:06:52 2025 +0900
+
+    feat: TodoRequestDto.java에 입력 데이터 개체 생성
+    
+    TodoRequestDto.java에 todo, name, password와 같은 입력 데이터를 개체로 만드는 DTO를 구현하였습니다.
+
+[33mcommit a4c6b983b8d084e5b2ef9a3dff18d1ae0655a3f4[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:06:15 2025 +0900
+
+    feat: TodoController.java에 수정 및 조회, 생성 기능 추가
+    
+    TodoRequestDto와 TodoResponseDto를 제어하는 TodoController.java에
+    비밀번호 조건을 제외한 수정사항과 조회, 생성 기능을 추가하였습니다.
+
+[33mcommit bf8c56ba4ea0d58f20054f3c5a9b1b21f9546347[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:06:00 2025 +0900
+
+    feat: Todo.java에 다양한 생성자 추가
+    
+    Todo 엔티티에 괄호 안의 변수에 따라 다른 생성자를 추가하였습니다.
+    - @Getter 및 @AllArgsConstructor를 사용하여 코드 간결화
+
+[33mcommit 825ff1fe3bd1c9da823e66086dd51e631d4aad02[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 20:01:48 2025 +0900
+
+    feat: TodoController.java에 수정 및 조회, 생성 기능 추가
+    
+    TodoRequestDto와 TodoResponseDto를 제어하는 TodoController.java에
+    비밀번호 조건을 제외한 수정사항과 조회, 생성 기능을 추가하였습니다.
+
+[33mcommit 64fec89bce3dd4cdebfd7c66150090162c46b0b5[m
+Author: kob882333@naver.com <kob882333@naver.com>
+Date:   Mon Mar 24 19:59:29 2025 +0900
+
+    feat: Todo.java에 다양한 생성자 추가
+    
+    Todo 엔티티에 괄호 안의 변수에 따라 다른 생성자를 추가하였습니다.
+    - @Getter 및 @AllArgsConstructor를 사용하여 코드 간결화
+
+[33mcommit 113135d8900a029664d0dbed07a4d7da574ae028[m
+Author: jihwanprogramer <130281249+jihwanprogramer@users.noreply.github.com>
+Date:   Fri Mar 21 23:23:28 2025 +0900
+
+    Create README.md
+
+[33mcommit fb5bacc50b18bf7b2283be80df4605f664834f17[m
+Author: https://github.com/jihwanprogramer/-3-.git <kob882333@naver.com>
+Date:   Fri Mar 21 23:20:00 2025 +0900
+
+    초기 파일 세팅
