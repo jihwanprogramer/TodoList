@@ -1,5 +1,6 @@
 package org.example.todo.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.example.todo.dto.TodoRequestDto;
 import org.example.todo.dto.TodoResponseDto;
 import org.example.todo.service.TodoService;
@@ -13,13 +14,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/todos")
+@RequiredArgsConstructor
 public class TodoController {
 
     private final TodoService todoService;
-
-    public TodoController(TodoService todoService) {
-        this.todoService = todoService;
-    }
 
     /**
      * 새로운 Todo 항목을 생성하는 API.
